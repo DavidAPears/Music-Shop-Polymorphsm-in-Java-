@@ -1,14 +1,13 @@
 package Instruments;
 
-public class Guitar extends Instrument {
+public class Piano extends Instrument{
 
-    private int numberOfStrings;
+    private int numberOfKeys;
     private String manufacturer;
 
-
-    public Guitar(String instrumentMaterial, String instrumentColour, String instrumentType, int numberOfStrings, String manufacturer) {
+    public Piano(String instrumentMaterial, String instrumentColour, String instrumentType, int numberOfKeys, String manufacturer) {
         super(instrumentMaterial, instrumentColour, instrumentType);
-        this.numberOfStrings = 6;
+        this.numberOfKeys = 88;
         this.manufacturer = manufacturer;
     }
 
@@ -16,8 +15,8 @@ public class Guitar extends Instrument {
         return play;
     }
 
-    public int getNumberOfStrings() {
-        return numberOfStrings;
+    public int getNumberOfKeys() {
+        return numberOfKeys;
     }
 
     public String getManufacturer() {
@@ -26,5 +25,3 @@ public class Guitar extends Instrument {
 
 
 }
-
-
