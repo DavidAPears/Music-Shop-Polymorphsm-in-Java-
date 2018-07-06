@@ -1,4 +1,4 @@
-public class Drumsticks {
+public class Drumsticks implements ISell {
 
     private String type;
     private double buyingPrice;
@@ -10,17 +10,21 @@ public class Drumsticks {
         this.sellingPrice = sellingPrice;
     }
 
-    public double calculateMarkup(double calculateMarkup){
-        return calculateMarkup;
+    public String getType() {
+        return type;
     }
 
-    public String getType() {
-        return type;}
-
     public double getBuyingPrice() {
-        return buyingPrice;}
+        return buyingPrice;
+    }
 
     public double getSellingPrice() {
-        return sellingPrice;}
+        return sellingPrice;
+    }
+
+    @Override
+    public double calculateMarkup() {
+        return sellingPrice - buyingPrice;
+    }
 
 }

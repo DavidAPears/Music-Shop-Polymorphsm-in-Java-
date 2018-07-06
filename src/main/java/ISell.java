@@ -1,29 +1,12 @@
 public interface ISell {
 
-    double calculateMarkup(String calculateMarkup);
+    double calculateMarkup();
 
-    double buyingPrice(String buyingPrice);
+    double getBuyingPrice( );
 
-    double sellingPrice(String sellingPrice);
+    double getSellingPrice( );
 }
 
 
 
 
-//    --------------------
-//
-//    public double sellingPrice() {
-//        return SellingPrice;
-//    }
-//
-//    public double buyingPrice() {
-//        return BuyingPrice;
-//    }
-//
-//    public double calculateMarkup() {
-//        return
-//                SellingPrice() - BuyingPrice;
-//    }
-//
-//    --------------------
-//

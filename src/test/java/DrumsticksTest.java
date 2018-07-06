@@ -9,7 +9,7 @@ public class DrumsticksTest {
 
     @Before
     public void before() {
-        drumsticks = new Drumsticks("Drumsticks",1.99, 4.99);
+        drumsticks = new Drumsticks("Drumsticks", 1.99, 4.99);
     }
 
     @Test
@@ -27,4 +27,10 @@ public class DrumsticksTest {
     public void getSellingPrice() {
         assertEquals(4.99, drumsticks.getSellingPrice(), 0.01);
     }
+
+    @Test
+    public void calculateMarkup() {
+        assertEquals(3.00, drumsticks.calculateMarkup(), 0.01);
+    }
+
 }
