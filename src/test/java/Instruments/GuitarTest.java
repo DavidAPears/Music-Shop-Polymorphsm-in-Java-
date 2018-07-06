@@ -1,3 +1,5 @@
+package Instruments;
+
 import Instruments.Guitar;
 import org.junit.Before;
 import org.junit.Test;
