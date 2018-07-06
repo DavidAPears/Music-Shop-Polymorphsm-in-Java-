@@ -1,5 +1,6 @@
 package Instruments;
 
+import junit.framework.TestCase;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -44,5 +45,9 @@ public class SaxophoneTest {
         assertEquals("Saxophone noise", saxophone.play("Saxophone noise"));
     }
 
+    @Test
+    public void calculateMarkup() {
+        TestCase.assertEquals(120.99, saxophone.calculateMarkup(), 0.01);
+    }
 }
 

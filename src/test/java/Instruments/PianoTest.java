@@ -1,5 +1,6 @@
 package Instruments;
 
+import junit.framework.TestCase;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -44,4 +45,8 @@ public class PianoTest {
         assertEquals("Plinky Plonk", piano.play("Plinky Plonk"));
     }
 
+    @Test
+    public void calculateMarkup() {
+        TestCase.assertEquals(749.00, piano.calculateMarkup(), 0.01);
+    }
 }

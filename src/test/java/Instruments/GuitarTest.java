@@ -1,6 +1,7 @@
 package Instruments;
 
 import Instruments.Guitar;
+import junit.framework.TestCase;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -12,7 +13,7 @@ public class GuitarTest {
 
     @Before
     public void before(){
-        guitar = new Guitar(99, 499, "Mahogany", "Cherry Sunburst", "Guitar", 6, "Gibson");
+        guitar = new Guitar(99.00, 499.00, "Mahogany", "Cherry Sunburst", "Guitar", 6, "Gibson");
     }
 
     @Test
@@ -45,6 +46,10 @@ public class GuitarTest {
         assertEquals("Guitar Noise", guitar.play("Guitar Noise"));
     }
 
+    @Test
+    public void calculateMarkup() {
+        TestCase.assertEquals(400.00, guitar.calculateMarkup(), 0.01);
+    }
 
 }
 
