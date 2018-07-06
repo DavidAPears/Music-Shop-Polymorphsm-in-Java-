@@ -47,7 +47,16 @@ public class ShopTest {
     }
 
 
-
+//    @Test
+//    public void canCalculateTotalMarkup(){
+//        shop.addToStock(guitar);
+//        shop.addToStock(piano);
+//        shop.addToStock(saxophone);
+//        shop.addToStock(drumsticks);
+//        shop.addToStock(drumskins);
+//        assertEquals(500.00, shop.calculateTotalMarkup(), 0.01);
+//
+//    }
 
 }
 

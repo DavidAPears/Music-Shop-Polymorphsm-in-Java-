@@ -1,4 +1,5 @@
 import Accessories.ISell;
+import com.sun.tools.javac.jvm.Items;
 
 
 import java.util.ArrayList;
@@ -24,6 +25,19 @@ public class Shop {
     public int getStockSize() {
         return stock.size();
     }
+
+
+//    public double calculateTotalMarkup() {
+//        double totalMarkup = 0;
+//        for (Item item : stock) {
+//            totalMarkup += item.calculateTotalMarkup();
+//        }
+//        return totalMarkup;
+//    }
+
 }
+
+
+
 
 
