@@ -1,15 +1,21 @@
 package Instruments;
 
-public abstract class Instrument implements IPlay {
+import Accessories.ISell;
+
+public abstract class Instrument implements IPlay, ISell {
 
     private String instrumentMaterial;
     private String instrumentColour;
     private String instrumentType;
+    private double buyingPrice;
+    private double sellingPrice;
 
-    public Instrument(String instrumentMaterial, String instrumentColour, String instrumentType) {
+    public Instrument(double buyingPrice, double sellingPrice, String instrumentMaterial, String instrumentColour, String instrumentType) {
         this.instrumentMaterial = instrumentMaterial;
         this.instrumentColour = instrumentColour;
         this.instrumentType = instrumentType;
+        this.buyingPrice = buyingPrice;
+;       this.sellingPrice = sellingPrice;
     }
 
     public String getInstrumentMaterial() {
@@ -24,5 +30,26 @@ public abstract class Instrument implements IPlay {
         return this.instrumentType;
     }
 
+
+    @Override
+    public double calculateMarkup() {
+        return sellingPrice - buyingPrice;
+    }
+
+    @Override
+    public String play(String play){
+        return play;
+    }
+
+
+    @Override
+    public double getBuyingPrice() {
+        return 0;
+    }
+
+    @Override
+    public double getSellingPrice() {
+        return 0;
+    }
 }
 

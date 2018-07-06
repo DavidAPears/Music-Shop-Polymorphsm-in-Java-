@@ -1,3 +1,4 @@
+import Accessories.Drumsticks;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -9,12 +10,12 @@ public class DrumsticksTest {
 
     @Before
     public void before() {
-        drumsticks = new Drumsticks("Drumsticks", 1.99, 4.99);
+        drumsticks = new Drumsticks("Accessories.Drumsticks", 1.99, 4.99);
     }
 
     @Test
     public void getType() {
-        assertEquals("Drumsticks", drumsticks.getType());
+        assertEquals("Accessories.Drumsticks", drumsticks.getType());
     }
 
     @Test

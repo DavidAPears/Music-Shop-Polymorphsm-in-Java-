@@ -1,3 +1,4 @@
+import Accessories.Drumskins;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -9,12 +10,12 @@ public class DrumskinsTest {
 
     @Before
     public void before() {
-        drumskins = new Drumskins("Drumskins", 1.99, 9.99);
+        drumskins = new Drumskins("Accessories.Drumskins", 1.99, 9.99);
     }
 
     @Test
     public void getType() {
-        assertEquals("Drumskins", drumskins.getType());
+        assertEquals("Accessories.Drumskins", drumskins.getType());
     }
 
     @Test

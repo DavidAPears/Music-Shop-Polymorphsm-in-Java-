@@ -1,10 +1,12 @@
-public class Drumsticks implements ISell {
+package Accessories;
+
+public class Drumskins implements ISell {
 
     private String type;
     private double buyingPrice;
     private double sellingPrice;
 
-    public Drumsticks(String type, double buyingPrice, double sellingPrice) {
+    public Drumskins(String type, double buyingPrice, double sellingPrice) {
         this.type = type;
         this.buyingPrice = buyingPrice;
         this.sellingPrice = sellingPrice;
