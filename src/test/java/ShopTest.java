@@ -5,8 +5,11 @@ import Instruments.Guitar;
 import Instruments.Piano;
 import Instruments.Saxophone;
 import org.junit.Before;
+import org.junit.Test;
 
 import java.util.ArrayList;
+
+import static junit.framework.TestCase.assertEquals;
 
 public class ShopTest {
 
@@ -30,6 +33,20 @@ public class ShopTest {
 
         shop = new Shop(stock);
     }
+
+    @Test
+    public void canAddStockSize(){
+        shop.addToStock(drumskins);
+        assertEquals(4, shop.getStockSize());
+    }
+
+    @Test
+    public void canRemoveStockSize(){
+        shop.removeFromStock(piano);
+        assertEquals(2, shop.getStockSize());
+    }
+
+
 
 
 }
