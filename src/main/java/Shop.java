@@ -13,7 +13,6 @@ public class Shop {
     }
 
 
-
     public void addToStock(ISell item) {
         this.stock.add(item);
     }
@@ -27,16 +26,15 @@ public class Shop {
     }
 
 
-//    public double calculateTotalMarkup() {
-//        double totalMarkup = 0;
-//        for (Item item : stock) {
-//            totalMarkup += item.calculateTotalMarkup();
-//        }
-//        return totalMarkup;
-//    }
+    public double calculateTotalMarkup(){
+        double totalMarkup = 0;
+        for (ISell item : this.stock) {
+            totalMarkup += item.calculateMarkup();
+        }
+        return totalMarkup;
+    }
 
 }
-
 
 
 
