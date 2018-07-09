@@ -28,8 +28,8 @@ public class Shop {
 
     public double calculateTotalMarkup(){
         double totalMarkup = 0;
-        for (ISell item : this.stock) {
-            totalMarkup += item.calculateMarkup();
+        for (ISell stock : this.stock) {
+            totalMarkup += stock.calculateMarkup();
         }
         return totalMarkup;
     }
